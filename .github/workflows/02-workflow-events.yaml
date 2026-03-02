@@ -3,7 +3,7 @@ on:
   - push
 jobs:
   triggers:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: ShowTrigger
         run: "Event name: ${{ github.event_name }}"
