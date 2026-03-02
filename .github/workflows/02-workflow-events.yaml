@@ -1,0 +1,9 @@
+name: 02 - Eventos
+on:
+  - push
+jobs:
+  triggers:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: ShowTrigger
+        run: "Event name: ${{ github.event_name }}"
